@@ -209,11 +209,11 @@ sys.exit()
 
   ```
 
-1. The current version of the GUI will be improved by working on [issue#8](https://gitlab.com/librecube/prototypes/python-cfdp-gui/-/issues/8), [issue #5](https://gitlab.com/librecube/prototypes/python-cfdp-gui/-/issues/5), extended to support Class 2 transfer, and other added features as needed. 
+10. The current version of the GUI will be improved by working on [issue#8](https://gitlab.com/librecube/prototypes/python-cfdp-gui/-/issues/8), [issue #5](https://gitlab.com/librecube/prototypes/python-cfdp-gui/-/issues/5), extended to support Class 2 transfer, and other added features as needed. 
 
-1. The same series F1 and series F2 tests designed for the [Python CFDP](https://gitlab.com/librecube/prototypes/python-cfdp/-/tree/test_cases/tests) project will be tested in micropython.
+11. The same series F1 and series F2 tests designed for the [Python CFDP](https://gitlab.com/librecube/prototypes/python-cfdp/-/tree/test_cases/tests) project will be tested in micropython.
 
-1. The features that haven’t been implemented will be implemented as needed by referencing [CCSDS recommended standards.](https://public.ccsds.org/Publications/SIS.aspx)
+12. The features that haven’t been implemented will be implemented as needed by referencing [CCSDS recommended standards.](https://public.ccsds.org/Publications/SIS.aspx)
 
 
 
