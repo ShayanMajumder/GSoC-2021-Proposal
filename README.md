@@ -2,16 +2,11 @@
 
 ## <center>CCSDS File Delivery Protocol in MicroPython</center>
 
-
-
-
-
-
 ### **Personal Details**
 
 - **Name:** Shayan Majumder
 - **University**: Birla Institute of Technology and Science, Pilani (BITS Pilani)
-- **Email:** 
+- **Email:**
   - **Personal**: <shayan.majumder2@gmail.com>
   - **University**: <f20190259@pilani.bits-pilani.ac.in>
 - **Linkedin**: <http://www.linkedin.com/in/shayan-79146519a>
@@ -23,44 +18,23 @@
 - **Timezone**: IST (GMT + 0530)
 - **Primary Language**: English
 
-
 I am a second-year student pursuing a B.E. in Electrical and Electronics Engineering at Birla Institute of Technology and Science, Pilani (BITS Pilani). My primary interest lies in programming and space exploration. My semester will complete in mid-May, leaving me enough time to get ready for my GSoC project. If I am selected, I shall work around 25 hours a week on the project, though I am open to putting in more effort if the work requires. My other engagements during this summer will be my Practice School which is needed for my university credits.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### **Introduction**
 
-
 CCSDS  File  Delivery  Protocol  (CFDP)  is a  file transfer protocol for use in space,  e.g., between  Earth and spacecraft in  Earth orbit or between Earth and spacecraft on interplanetary missions. The  CCSDS  File  Delivery  Protocol (CFDP)  has been implemented in  Python by  LibreCube.   This project aims to make this the existing setup OS independent as well as make it compatible with micropython and hence extend its utilities as a ready-to-use space software. This will be demonstrated using the pyboard as the server and using UDP over WiFi.  This project will also include extending the capabilities of the current system and testing the system exhaustively. The CFDP  GUI  application developed by LibreCube shall be used for this and will be extended/modified as needed.
 
-
-![](Aspose.Words.790d34ac-9ae7-48e2-9d69-cea1911b318e.001.png)
+![](Images/node_mcu.png)
 
 <center>Fig1: NodeMCU ESP32 WiFi development board</center>
 
-![](Aspose.Words.790d34ac-9ae7-48e2-9d69-cea1911b318e.002.png)
+![](Images/CCSDS_Layers.png)
 
 <center>Fig 2: CCSDS File Delivery Protocol (CFDP) 
 forms the link between the application layer and 
 the transport layer in the CCSDS protocol stack</center>
 
-
-
-
 ### **Background Theory**
-
 
 The CCSDS File Delivery Protocol can operate a wide range of machine configurations, from effortless ground-to-air space to complex systems of orbiters and rovers supported by multiple terrains and transmission links. The protocol enables the delivery of raw files that work in a single paired communication network. The CFDP file delivery capability can deliver files to any network containing multiple links.
 
@@ -72,11 +46,9 @@ Some of the micropython programmable microprocessors that support WiFi are [ESP8
 
 NodeMCU is an open-source firmware for which open-source prototyping board designs are available. The MicroPython software supports the ESP8266 chip itself, and any board with it will work. ESP 32 is an advanced version of this with additional capabilities including more RAM and Flash memory.
 
-![](Aspose.Words.790d34ac-9ae7-48e2-9d69-cea1911b318e.003.png)
+![](Images/thonny_IDE.png)
 
 <center>Fig 3: Thonny IDE for Micropython</center>
-
-
 
 ### **Proposed Workflow**
 
@@ -105,13 +77,7 @@ The next stage will be testing PC to PC CFDP communication through WiFi. After t
 
     1. **Add Not implemented functions in the CFDP project** - Some of the recommended standards that haven’t been implemented will be implemented as needed. *(Status -To do).*
 
-
-
-
-
 1. **Proposed Solutions :**
-
-
 
     1. To remove bit array dependency, use native Python code for bit pattern manipulation/reading.
 
@@ -152,7 +118,6 @@ ap.config(essid='ESP-AP') # set the ESSID of the access point
 7. Next, connect the PC to this network by WiFi by using the given id and password.
 
 1. Next, use the socket module to create a server in the ESP8266 using the socket module.
-
 
 ```python
 #!/usr/bin/env python3 
@@ -216,17 +181,9 @@ sys.exit()
 12. The features that haven’t been implemented will be implemented as needed by referencing [CCSDS recommended standards.](https://public.ccsds.org/Publications/SIS.aspx)
 
 
-
-
-
-
-
 ### **Timeline**
 
-
 #### **Community Bonding Period (May 17 - June 6) :**
-
-
 
 - Introduce myself and this project in [Librecube IRC channel](https://app.element.io/#/room/#librecube.org:matrix.org), [LibreCube mailing list](mailto:librecube@freelists.org), and [LibreCube Forum](https://community.libre.space/c/librecube).
 
@@ -236,11 +193,7 @@ sys.exit()
 
 - Setup development environment and [Taiga account](https://tree.taiga.io/project/librecube-librecube/us/185?kanban-status=1911016) for TODO list and weekly report.
 
-
-
 #### **Official Coding Period (June 7 - August 23)** 
-
-
 
 - **Week 1 (June 7 - June 13)**
 
@@ -255,20 +208,11 @@ sys.exit()
 
     - Start working on setting up the transport layer using UDP, Networking, etc.
 
-
-
-
-
-
-
-
 - **Week 4 -5 (June 28 - July 11)**
 
     - Debug and make sure all functions work properly when imported in Micropython. 
 
     - Test that the CFDP module is importable in Micropython and thus carries out client-server file transfers.
-
-
 
 - ` `**Phase 1 evaluation period (July 12 - July 16)** 
 
@@ -294,16 +238,7 @@ sys.exit()
 
     - If all goes well I will start working on other projects under LibreCube. For example implementing CFDP protocol in GNU radio.
 
-
-
-
-
-
-
-
-
-
-### **Deliverables** 
+### **Deliverables**
 
 1. An OS independent Python CFDP library
 
@@ -326,8 +261,3 @@ I have been working in space communications for some time now, and I seek to lev
 1. <https://docs.micropython.org/en/latest/index.html>
 
 1. <https://gitlab.com/librecube/prototypes/python-cfdp-gui>
-
-
-
-
-
